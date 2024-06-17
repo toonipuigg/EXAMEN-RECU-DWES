@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Libros</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #principal{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        #cont_menu{
+            display: flex;
+            justify-content: space-around;
+            height: 10%;
+            width: 100%;
+            align-items: center;
+        }
+        #formulario{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+        }
+        #footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 10%;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="principal">
+        <div id="cont_menu">
+            <div>
+                <p>Home</p>
+            </div>
+            <div>
+                <p>Profile</p>
+                <a href="/login">Logout</a>
+            </div>
+        </div>
+        <div id="formulario">
+            <form action="/update_libro" method="post">
+                <input type="text" placeholder="Nombre del Libro" name="nombre_libro">
+                <input type="text" placeholder="Portada del libro" name="portada">
+                <input type="text" placeholder="Descripcion del libro" name="descripcion">
+                <input type="submit">
+            </form>
+        </div>
+        <footer id="footer">
+            <p>footer</p>
+        </footer>
+    </section>
+</body>
+</html>
